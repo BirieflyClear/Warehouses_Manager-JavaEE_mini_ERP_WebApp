@@ -142,7 +142,7 @@ public class InvoiceControllerServlet extends HttpServlet {
 
 		// read user data from the form
 		
-		String order_ID = request.getParameter("oID");
+		String order_ID = request.getParameter("order_ID");
 		
 		Order order = orderDBUtil.getOrder(order_ID);
 		
@@ -154,7 +154,7 @@ public class InvoiceControllerServlet extends HttpServlet {
 			// add user to the data base
 			invoiceDBUtil.addInvoice(theInvoice);
 			// send back to main page
-			listOrders(request, response);
+			listInvoices(request, response);
 		}else {
 			String message = "Invoice exists or wrong order ID!";
 			request.setAttribute("MSG", message);
@@ -164,16 +164,6 @@ public class InvoiceControllerServlet extends HttpServlet {
 		
 		
 
-	}
-
-	private void listOrders(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		ArrayList<Order> orders = orderDBUtil.getOrders();
-		int function = loggedUserDBUtil.getLoggedUser().getFunction().length();
-
-		request.setAttribute("ORDER_LIST", orders);
-		request.setAttribute("FUNCTION", function);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/list-orders.jsp");
-		dispatcher.forward(request, response);
 	}
 
 	private void listInvoices(HttpServletRequest request, HttpServletResponse response) throws Exception {

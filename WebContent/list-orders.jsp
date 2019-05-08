@@ -84,15 +84,6 @@
 							<option value="delivered">Delivered</option>
 						</select> <input type="submit" value="save" />
 					</form> <%
-					if(theOrders.get(i).getInvoice_status().length() == 10){	%>
-						
-						<form action="InvoiceControllerServlet" method="GET">
-						<input type="hidden" name="command" value="ADD"/>
-						<input type="hidden" name="oID" value="<%=theOrders.get(i).getoID()%>"/>
-						<input type="submit" value="make invoice"/>
-						</form>
-						
-		<%			}
  	}
  %>
 					<form action=OrderControllerServlet method="GET">

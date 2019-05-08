@@ -30,9 +30,9 @@
 					if (function == 10) {
 				%>
 				
-			<!--  	<input type="button" value="Add invoice"
+					<input type="button" value="Add invoice"
 					onclick="window.location.href='add_new_invoice.jsp'; return false;" />
-				-->	
+				
 				<%
 					}
 				%>

@@ -1,0 +1,84 @@
+html, body {
+	background-color: white;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-family: Helvetica, Arial, Verdana, Garamond;
+	padding: 0px;
+	align-content: center;
+}
+
+table {
+	border-radius: 5px;
+	border-collapse: separate;
+	font-family: Helvetica, Arial, Verdana, Garamond;
+	width: auto;
+	align-center: center;
+}
+
+table.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header h2 {
+	font-family: Helvetica, Arial, Verdana, Garamond;
+	font-size: 30px;
+	text-align: center;
+}
+
+caption {
+	font-size: 20px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+th {
+	align-content: center;
+	padding: 20px;
+	color: black;
+}
+
+tr {
+	align-content: center;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background: #eceff1;
+}
+
+tr:nth-child(odd) {
+	background: #b0bec5
+}
+
+input[type=submit] {
+	border: 1px solid;
+	border-radius: 25px;
+	padding: 5px;
+	font-weight: bold;
+	width: 140px;
+	background: #e0f2f1;
+	margin-bottom: 3px;
+	
+}
+
+input[type=button] {
+	border: 1px solid;
+	border-radius: 25px;
+	padding: 5px;
+	font-weight: bold;
+	width: 140px;
+	background: #e0f2f1;
+	margin-bottom: 3px;
+	
+}
+
+.inner {
+	display: inline-block;
+}
+
+#outer {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 15px;
+}
